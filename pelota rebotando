@@ -1,0 +1,17 @@
+var x=200;
+var Vel=1;
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw(){
+  background(220);
+  ellipse(x,200,50,50)
+  x=x+Vel;
+  if(x>375){
+    Vel=Vel*-1;
+  }
+  if(x<25){
+    Vel=Vel*-1;
+  }
+}
